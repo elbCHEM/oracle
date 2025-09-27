@@ -1,5 +1,5 @@
 import pytest
-from oracle.flow import PROPER_EXIT_STRING, main
+from oracle.flow import main
 
 
 @pytest.mark.parametrize('quitstring', ['', ' ', 'quit', 'QUIT', 'QuIt'])
@@ -16,4 +16,4 @@ def test_quitting_program(monkeypatch, quitstring: str) -> None:
     monkeypatch.setattr('builtins.input', mockinput)
 
     main()
-    assert last_string_printed == PROPER_EXIT_STRING
+    assert last_string_printed == 'Please come back another time.'

@@ -2,9 +2,6 @@ from oracle.logic import get_answer
 
 
 MAX_QUESTIONS = 100
-PROMPT_STRING_FIRST_ITERATION = "Please enter a question - (Exit to returning quit): "
-PROMPT_STRING_LATER_ITERATION = "Please enter a another question - (Exit to returning quit): "
-PROPER_EXIT_STRING = 'Please come back another time.'
 
 
 class TooManyQuestionAsked(Exception):
@@ -18,7 +15,7 @@ class TooManyQuestionAsked(Exception):
 def main() -> None:
     try:
         app_flow()
-        print(PROPER_EXIT_STRING, end='\n')
+        print('Please come back another time.', end='\n')
     except TooManyQuestionAsked:
         print("Too many questions asked. Please try again later")
     except KeyboardInterrupt:
@@ -26,10 +23,10 @@ def main() -> None:
 
 
 def app_flow() -> None:
-    print("Welcome. I am the oracle. I will answer all question. Please beware, you way not like what you hear.", end='\n\n')
+    print("Welcome. I am the oracle. I will answer all question. But beware! You may not like what you hear.", end='\n\n')
 
     for n in range(1, MAX_QUESTIONS+1):
-        userinput = input(PROMPT_STRING_FIRST_ITERATION if n == 0 else PROMPT_STRING_LATER_ITERATION).strip()
+        userinput = input("Please enter a question - (provide 'quit' to exit): ").strip()
         if not userinput or userinput.lower() == 'quit':
             return
         if not isvalid(userinput):

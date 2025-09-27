@@ -12,7 +12,7 @@ def test_probability() -> None:
 
 
 def interval_of_confidence_3sigma(sample_size: int) -> tuple[int, int]:
-    """Confidence interval of 3 sigma ~ 99.73"""
+    """Confidence interval of 3 sigma ~ 99.73 %"""
     p = 1 / SECRET_MESSAGES_ODDS
     __mean = sample_size * p
     __std = math.sqrt(sample_size * p * (1 - p))
