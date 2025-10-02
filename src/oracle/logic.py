@@ -7,14 +7,14 @@ SECRET_MESSAGES_ODDS = 256
 ANSWERS: list[LiteralString] = [
     # Positive
     "Yes.",
-    "Definitly.",
-    "Probaly.",
+    "Definitely.",
+    "Probably.",
     "Absolutely.",
-    "Nothing have ever been more true.",
+    "Nothing has ever been more true.",
 
     # Negative
     "No.",
-    "Definitly not.",
+    "Definitely not.",
     "Probably not.",
     "Absolutely not.",
     "Under no circumstances.",
@@ -30,7 +30,7 @@ ANSWERS: list[LiteralString] = [
     "Why are you asking me?",
     "If the stars align, then maybe?",
     "Don't ask me!",
-    "You don't you ask your friends? Oh wait! That's right. You don't have any.",
+    "Why don't you ask your friends? Oh wait! That's right. You don't have any.",
     r"¯\_(ツ)_/¯",
 ]
 

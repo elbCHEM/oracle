@@ -17,9 +17,9 @@ def main() -> None:
         app_flow()
         print('Please come back another time.', end='\n')
     except TooManyQuestionAsked:
-        print("Too many questions asked. Please try again later")
+        print("Too many questions asked. Please try again later.")
     except KeyboardInterrupt:
-        print('Process terminated due to keyboard interrupt')
+        print('Process terminated due to keyboard interrupt.')
 
 
 def app_flow() -> None:
