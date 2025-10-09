@@ -8,8 +8,8 @@ A simple command-line application that answers your questions with a touch of hu
 
 1. Clone the repository:
 	```sh
-	git clone https://github.com/elbCHEM/magic8ball.git
-	cd magic8ball
+	git clone https://github.com/elbCHEM/oracle.git
+	cd oracle
 	```
 2. (Optional) Create and activate a virtual environment:
 	```sh
@@ -43,7 +43,6 @@ magic8ball/
 │       ├── __main__.py
 │       ├── flow.py
 │       ├── logic.py
-│       ├── logger.py
 │       └── ...
 ├── tests/
 ├── requirements.txt
@@ -53,7 +52,7 @@ magic8ball/
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
