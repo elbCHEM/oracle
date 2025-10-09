@@ -37,7 +37,7 @@ python -m oracle --seed 42
 ## Project Structure
 
 ```
-magic8ball/
+oracle/
 ├── src/
 │   └── oracle/
 │       ├── __main__.py
